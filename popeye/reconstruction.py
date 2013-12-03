@@ -7,7 +7,6 @@ import numpy as np
 from pylab import find
 from scipy.interpolate import interp1d
 import nibabel
-from MakeFastRF import MakeFastRF
 from utilities import generate_shared_array
 
 def reconstruct_stimulus(metaData,stimData,funcData,verbose=True):

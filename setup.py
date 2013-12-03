@@ -39,15 +39,9 @@ try:
     from Cython.Distutils import build_ext as build_pyx_ext
     from numpy import get_include
     # add Cython extensions to the setup options
-    exts = [Extension('popeye.MakeFastPrediction',
-                      ['popeye/MakeFastPrediction.pyx'],
+    exts = [Extension('popeye.cython',
+                      ['popeye/cython.pyx'],
                        include_dirs=[get_include()]),
-            Extension('popeye.MakeFastRF',
-                      ['popeye/MakeFastRF.pyx'],
-                       include_dirs=[get_include()]),
-            Extension('popeye.MakeFastRFs',
-                      ['popeye/MakeFastRFs.pyx'],
-                       include_dirs=[get_include()])
                       ]
     opts['cmdclass'] = dict(build_ext=build_pyx_ext)
     opts['ext_modules'] = exts

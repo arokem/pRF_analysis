@@ -2,8 +2,6 @@ from __future__ import division
 import time
 import numpy as np
 from scipy.ndimage.measurements import standard_deviation
-from MakeFastRFs import MakeFastRFs
-from MakeFastRF import MakeFastRF
 from scipy.optimize import fmin_powell, fmin
 
 def error_function(sigma,old_sigma,xs,ys,degX,degY,voxel_RF):

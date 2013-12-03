@@ -5,7 +5,6 @@ import numpy as np
 from scipy.special import gamma
 from scipy.optimize import fmin_powell, fmin, brute
 from scipy.stats import linregress
-from MakeFastPrediction import MakeFastPrediction
 
 def double_gamma_hrf(delay):
     """
