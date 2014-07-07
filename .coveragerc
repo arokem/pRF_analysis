@@ -1,7 +1,0 @@
-[run]
-branch = True
-source = popeye
-include = popeye
-omit = */setup.py
-[report]
-include = popeye
